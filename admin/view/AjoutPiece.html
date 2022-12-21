@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajout piece</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .c{color:lightseagreen;
+        font-size: 20px;
+        }
+        .a{
+            align: center;
+        }
+    </style>
+</head>
+<body> 
+    <div class="container py-3">
+        <div class="jumbotron text-center">
+            <h3>Ajouter une pièce</h3>
+        </div>
+            <legend>Nouveau Pièce</legend>
+            <table>
+                <tr><td width="15%"><img src="../image/i112.jpg" width="300px" height="500px"></td>
+                    <td width="85%">
+            <form action="../modele/ajoutP_action.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c">Nom piece</label>
+                            <input type="text"  name="nom" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c">Matériaux</label>
+                            <input type="text"  name="mat" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c">Poids</label>
+                            <input type="text" name="pd" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c" >Couleur</label>
+                            <input type="text"  name="col" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c" >Caractéristiques</label>
+                            <textarea name="car" class="form-control" placeholder="longueur/largeur ou diamètre" ></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c">Application</label>
+                            <input type="text" name="app" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="c" >image</label><br>
+                               <input name="img" type="file" /> 
+                        </div>
+                    </div>
+                </div>
+                <div class="a">
+                    <input type="submit" value="ajouter">
+                </div>
+              </form>
+            </td></tr>
+          </table>
+        </fieldset>
+    </div>
+</body>
+</html>

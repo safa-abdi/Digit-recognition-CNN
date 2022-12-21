@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Supprimer bande</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+         .cet{
+            color:cadetblue;
+            font-size: 30px;
+        }
+        .g{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-3">
+        <div class="jumbotron text-center">
+            <h3>Supprimer une bande</h3>
+        </div>
+            <legend class="g">Selectionnez id bande à supprimer</legend>
+            <form action="../modele/supp_action.php" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr><td width="80%">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cet" >id bande</label>
+                            <input type="text" required name="id" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="supprimer">
+            </td>
+            <td width="20%">
+              <img src="../image/im1.jpg" width="300px" height="300px">
+           </td>   
+          </tr>
+            </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajout bande</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        .cr{
+            color: navy;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-3">
+        <div class="jumbotron text-center">
+            <h3>Ajouter une bande</h3>
+        </div>
+        <legend>Nouveau bande</legend>
+        <table>
+            <tr><td width="25%"><img src="../image/i27.jpg" width="250px" height="400px"></td>
+                <td width="75%">
+        <fieldset>
+            <legend></legend>
+            <form action="../modele/ajoutB_action.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Nom bande</label>
+                            <input type="text"  name="nom" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Modele</label>
+                            <input type="text" name="mod" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr" >Matériel</label>
+                            <input type="text" name="mat" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Couleur</label>
+                            <input type="text"  name="col" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Epaisseur</label>
+                            <input type="text" name="ep" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Largeur</label>
+                            <input type="text" name="lar" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Longueur</label>
+                            <input type="text" name="long" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Resistance</label>
+                            <input type="text" name="resis" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Caracteristique</label>
+                            <input type="text" name="cara" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">Application</label>
+                            <input type="text"  name="app" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="cr">image</label><br>
+                               <input name="img" type="file" /> 
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="ajouter">
+            </form>
+           </td></tr>
+         </table>
+        </fieldset>
+    </div>
+</body>
+</html>
